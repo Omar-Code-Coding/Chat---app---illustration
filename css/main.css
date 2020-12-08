@@ -1,10 +1,12 @@
 @media (max-width: 48.5em) {
   .container .pattern__top {
     grid-column: margin-start / col-end 3;
-    translate: -30% -20%;
+    -webkit-transform: translate(-30%, -20%);
+            transform: translate(-30%, -20%);
   }
   .container .pattern__bottom {
-    translate: 0%;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
     grid-column: col-start 3 / margin-end;
     -ms-grid-row: 1;
     -ms-grid-row-span: 6;
@@ -74,7 +76,8 @@ body {
 }
 
 .pattern__top {
-  translate: -40% -17%;
+  -webkit-transform: translate(-40%, -17%);
+          transform: translate(-40%, -17%);
   grid-column: margin-start / col-end 2;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -90,7 +93,8 @@ body {
 }
 
 .pattern__bottom {
-  translate: 71%;
+  -webkit-transform: translateX(71%);
+          transform: translateX(71%);
   -ms-grid-column-align: end;
       justify-self: end;
   -ms-flex-item-align: end;
@@ -118,10 +122,12 @@ body {
 @media (max-width: 48.5em) {
   .container .pattern__top {
     grid-column: margin-start / col-end 3;
-    translate: -30% -20%;
+    -webkit-transform: translate(-30%, -20%);
+            transform: translate(-30%, -20%);
   }
   .container .pattern__bottom {
-    translate: 0%;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
     grid-column: col-start 3 / margin-end;
     -ms-grid-row: 1;
     -ms-grid-row-span: 6;

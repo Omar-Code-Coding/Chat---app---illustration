@@ -22,12 +22,12 @@ $gradient-2: hsl(264, 100%, 61%);      //Light Violet
 @media (max-width: 48.5em) {                      //375px Mobile size
     .container .pattern__top {
         grid-column: margin-start / col-end 3;
-        translate: -30% -20%;
+        transform: translate(-30%, -20%);
 
     }
 
     .container .pattern__bottom {
-        translate: 0%;
+        transform: translate(0%, 0%);
         grid-column: col-start 3 / margin-end;
         grid-row: 1 / span 6;
     }
