@@ -420,6 +420,7 @@ body {
 }
 
 .input {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -447,11 +448,11 @@ body {
 }
 
 .input__btn {
-  display: inline;
+  display: inline-block;
   position: absolute;
+  right: 2%;
   width: 3.5rem;
   height: 3.5rem;
-  margin-right: .5%;
   border: none;
   border-radius: 50%;
   padding: .5rem;
