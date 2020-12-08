@@ -117,6 +117,7 @@ body {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4 / 5;
+  margin-bottom: 5vh;
 }
 
 @media (max-width: 48.5em) {
