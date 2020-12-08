@@ -364,8 +364,16 @@ body {
   transition: ease-in .25s;
 }
 
+.gallery__img:active {
+  -webkit-transform: translate(0%, -15%);
+          transform: translate(0%, -15%);
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
 .gallery__img:hover {
-  translate: 0% -15%;
+  -webkit-transform: translate(0%, -15%);
+          transform: translate(0%, -15%);
   -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
@@ -457,7 +465,18 @@ body {
   border: none;
   border-radius: 50%;
   padding: .5rem;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: ease-out .2s;
+  transition: ease-out .2s;
   background-color: #3e2753;
+}
+
+.input__btn:hover {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+  -webkit-box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.425);
+          box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.425);
 }
 
 .input__icon {
