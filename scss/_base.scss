@@ -1,0 +1,63 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::before,
+ *::after {
+     box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;      //1rem = 10px
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: $color-secondary-4;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: [margin-start] minmax(1rem, 10vw) [center-start] repeat(4, [col-start] 1fr [col-end]) [center-end] minmax(1rem, 10vw) [margin-end]; 
+    align-items: center;
+}
+
+.pattern {
+    &__top {
+        translate: -40% -17%;
+        grid-column: margin-start / col-end 2;
+        grid-row: 1 / 2;
+        align-self: start;
+        z-index: 1;
+
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0 48rem 48rem;
+        background: linear-gradient(16deg, rgba(136,56,255,1) 35%, rgba(233,66,255,1) 100%);
+    }
+
+    &__bottom {
+        translate: 71%;
+        justify-self: end;
+        align-self: end;
+        grid-column: col-start 3 / margin-end;
+        grid-row: 1 / 2;
+        z-index: 1;
+
+        width: 100%;
+        height: 100%;
+        border-radius: 50rem 50rem 0 0;
+        opacity: .04;
+        background: linear-gradient(16deg, rgba(136,56,255,1) 35%, rgba(233,66,255,1) 100%);
+    }
+}
+
+.attribution {
+    grid-column: center-start / center-end;
+    grid-row: 4 / 5;
+}

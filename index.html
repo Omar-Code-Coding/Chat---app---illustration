@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | [Chat App illustration]</title>
+</head>
+<body class="container">
+ <span class="pattern__top"></span>
+
+ <main class="app" id="app">
+
+   <div class="app__bezel"></div>
+   <!-------------------app's user top UI----------------------->
+   <section class="user">
+     <img src="images/avatar.jpg" alt="an image of samuel green" class="user__img">
+
+     <div class="user__item">
+       <p class="user__name">
+         Samuel Green
+       </p>
+       <h6 class="user__tag">
+        Available to Walk
+       </h6>
+     </div>
+
+     <a href="#" class="user__menu">
+       <svg class="user__menu-icon">
+         <use xlink:href="svg/symbol-defs.svg#icon-dots-three-vertical"></use>
+       </svg>
+     </a>
+     
+     <a href="#" class="user__btn">
+       <svg class="user__arrow-icon">
+         <use xlink:href="svg/symbol-defs.svg#icon-chevron-left"></use>
+       </svg>
+     </a>
+   </section>
+
+   <!-------------------app's left messages-------------------->
+   <div class="message-left message-left--1">
+     <p class="message-left__text">
+       That sounds great.
+       I’d be happy with that.
+     </p>
+   </div>
+
+   <div class="message-left 2 message-left--2">
+     <p class="message-left__text">
+       Could you send over some pictures of your dog, please?
+     </p>
+   </div>
+
+   <div class="message-left 3 message-left--3">
+     <p class="message-left__text">
+       She looks so happy! The time we discussed works.
+       How long shall I take her out for?
+     </p>
+   </div>
+  
+   <!------------------app's right messages------------------->
+   <div class="message-right message-right--1">
+     <p class="message-right__text">
+       Here are a few pictures.
+       She’s a happy girl!
+     </p>
+   </div>
+
+   <div class="message-right 2 message-right--2">
+     <p class="message-right__text">
+       Can you make it?
+     </p>
+   </div>
+
+   <!--------------------app's gallery------------------------>
+    <div class="gallery">
+      <img src="images/dog-image-1.jpg" alt="dog-image-1" class="gallery__img">
+      <img src="images/dog-image-2.jpg" alt="dog-image-2" class="gallery__img">
+      <img src="images/dog-image-3.jpg" alt="dog-image-3" class="gallery__img">
+    </div>
+    
+   <!---------------------app's notifications------------------->
+    <div class="notification notification--1">
+      <span class="notification__circle"></span>
+
+      <p class="notification__text">
+        30 minute walk
+      </p>
+      <h1 class="notification__price notification__price--1">
+        $29
+      </h1>
+    </div>
+
+    <div class="notification notification--2">
+      <span class="notification__circle"></span>
+
+      <p class="notification__text">
+        1 hour walk
+      </p>
+      <h1 class="notification__price notification__price--2">
+        $49
+      </h1>
+    </div>
+
+    <form action="#" class="input">
+      <input type="text" placeholder="Type a message.."class="input__bar">
+    
+      <button class="input__btn">
+        <svg class="input__icon">
+          <use xlink:href="/svg/symbol-defs.svg#icon-chevron-right"></use>
+        </svg>
+      </button>
+    </form>
+    
+  </main>
+
+  <section class="headline" id="headline">
+    <h1 class="headline__main">
+      Simple booking
+    </h1>
+
+    <p class="headline__sub">
+      Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+      discuss arrangements and make bookings. Once the walk has been completed you can rate 
+      your walker and book again all through the chat.
+    </p>
+  </section>
+
+  <span class="pattern__bottom"></span>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

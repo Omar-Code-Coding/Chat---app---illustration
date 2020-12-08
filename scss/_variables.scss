@@ -1,0 +1,61 @@
+$color-primary-1: hsl(276, 100%, 81%);    //sub-heading at the top of the app UI
+$color-primary-2: hsl(276, 55%, 52%);     //chat on the left
+$color-primary-3: hsl(271, 15%, 43%);     //chat on the right
+$color-primary-4: hsl(210, 4%, 73%);      //placeholder text
+$color-primary-5: hsl(271, 36%, 24%);     //main heading
+$color-primary-6: hsl(270, 7%, 64%);      //paragraph
+$color-primary-7: #ede5f4;      //Left chat's background color
+
+$color-secondary-1: hsl(270, 20%, 96%);   //app background
+$color-secondary-2: hsl(271, 36%, 24%);   //submit button background
+$color-secondary-3: hsl(289, 100%, 72%);  //radio button outline
+$color-secondary-4: white;       //netural color
+
+///////////////////////////////////////////////////
+///////////////GRADIENTS//////////////////////////
+$gradient-1: hsl(293, 100%, 63%);      //Light Magenta
+$gradient-2: hsl(264, 100%, 61%);      //Light Violet
+
+
+////////////////////////////////////////////////////
+///////////////////MEDIA QUERY//////////////////////
+@media (max-width: 48.5em) {                      //375px Mobile size
+    .container .pattern__top {
+        grid-column: margin-start / col-end 3;
+        translate: -30% -20%;
+
+    }
+
+    .container .pattern__bottom {
+        translate: 0%;
+        grid-column: col-start 3 / margin-end;
+        grid-row: 1 / span 6;
+    }
+                           
+    .app#app {
+        grid-column: center-start / center-end;
+        justify-self: center;
+        margin: 10vh;
+    }
+
+    .headline#headline {
+        grid-column: center-start / center-end;
+        grid-row: 2 / 3;
+        justify-self: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 0 0 9vh 0;
+
+    }
+
+}
+
+@media screen and (max-width: 27.5em) {                  //440px ClearFix
+    .app#app {
+        width: 100%;
+    }
+    .user .user__menu {
+        margin: 0 1% 0 30%;
+    }
+}
