@@ -149,7 +149,14 @@
         transition: ease-in .25s;
     }
 
+    &__img:visited {
+        transform: translate(0%, 0%);
+        box-shadow: none;
+    }
+
     &__img:active {
+        width: 15rem;
+        height: 15rem;
         transform: translate(0%,-15%);
         box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.20);
     }
