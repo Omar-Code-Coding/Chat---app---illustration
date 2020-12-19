@@ -447,6 +447,7 @@ body {
   border: none;
   border-radius: 10rem;
   padding: 1.7rem 2rem;
+  outline: none;
   color: #b7babd;
 }
 
