@@ -361,8 +361,8 @@ body {
   height: 6rem;
   margin: 0 .55rem;
   border-radius: 1.5rem;
-  -webkit-transition: ease-in .25s;
-  transition: ease-in .25s;
+  -webkit-transition: all .20s;
+  transition: all .20s;
 }
 
 .gallery__img:hover {
